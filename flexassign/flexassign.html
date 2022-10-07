@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex assignment</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            height: 90vh;
+            width: 90vw;
+            background-color: rgb(199, 244, 199);
+            margin-left: 4rem;
+            margin-right: 5rem; 
+        }
+      
+       .nav{
+           background-color: white;
+           height: 15vh;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+
+       .nav-list{
+           height: 10vh;
+           display: flex;
+           width: 30vw;
+           /* border: 1px solid white; */
+           
+           
+        }
+
+       .nav-list li{
+           color: black;
+           /*  border: 1px solid brown;  */
+           width: 10vw;
+           display: flex;
+           flex-wrap: wrap;
+           align-items: center;
+           justify-content: center ;
+           text-decoration: dotted;
+           font-weight: bold;
+           font-size: 12;
+           font-family: sans-serif;
+        
+        }
+
+       .nav-list li:hover{
+           font-family: fantasy;
+           border: 3px solid black;
+           font-size: 15;
+        }
+
+      
+
+
+
+       .right-list{
+           height: 10vh;
+           display: flex;
+           width: 20vw;
+           /* border: 1px solid white;  */
+           margin:;
+        }
+
+       .right-list li{
+           color: black;
+           /* border: 1px solid brown; */
+           width: 10vw;
+           display: flex;
+           flex-wrap: wrap;
+           align-items: center;
+           justify-content: center ;
+           font-weight: bold;
+           font-size: 12;
+           font-family: sans-serif;
+           height: ;
+           margin-right: 10px ;
+        
+        }
+      
+      
+       .right-list li:hover{
+          font-family: fantasy;
+          border: 3px solid black;
+          font-size: 15;
+        }
+
+        #flag{
+            height: 10px;
+            width: auto;
+        }
+
+
+       .img{
+          display: flex;
+          justify-content: space-around;
+        }
+
+
+       .text{ 
+          display: inline-block;
+          margin-top: 12%;
+          margin-left: 3%;
+        }
+
+
+        #shop{
+            background-color: green;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5%;
+            height: 33px;
+            width: 80px;
+            box-shadow: 3px 3px 3px black;
+        }
+
+        #shop:hover{
+            color: white;
+            font-size: medium;
+            box-shadow: 5px 5px 3px black;
+        }
+
+
+        #frimg{
+            height: 20rem;
+            width: auto;
+            transform: rotate(20deg);
+            margin-top: 10%;
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+<div class="main">
+  <div class="nav">
+    <ul class="nav-list">
+        <li>Soylent</li>
+        <li>Drink</li>
+        <li>Cafe</li>
+        <li>Powder</li>
+        <li>All Products</li>
+    </ul>
+    
+    <ul class="right-list">
+        <li><img src="images/Flag-India.webp" alt="" id="flag"></li>
+        <li>Login</li>
+        <li>Refer</li>
+        <li>Cart (0)</li>
+    </ul>
+   
+  </div>
+
+<div class="img">
+    <section class="fruit"><img src="images/SoylentsStrawberry3_V2-1200x800-removebg-preview.png" id="frimg" alt=""></section>
+    <section class="text"><h1>Fruit is back!</h1> <br>
+    <p>Solent strawberry is like strawberry milk, you loved as a kid <br> but, it has 20g os protein. 20% of your daily recommended <br> mircronutrients and your mom doesn't have to make it for you.</p>
+    <br> <br> <br>
+    <input type="button" value="Shop Now" id="shop">
+    </section>
+</div>
+</div> <br><br><hr>
+
+
+
+
+
+
+</body>
+</html>
